@@ -1,0 +1,77 @@
+<html>
+<script type="text/javascript">
+    // 10.Write a JavaScript program to decide that you eligible for voting? (using all function)
+
+    // TNRN
+    function tnrn(){
+        var a = parseInt(prompt("Enter your age : "));
+
+        if(a>=18 && a<=100){
+            document.write(`<h2>Your age is ${a}. Are you elagible for votting...</h2>`);
+        }else if(a<18){
+            document.write(`<h2>Your age is ${a}. Are you not elagible for votting...</h2>`);
+        }else if(a>100){
+            document.write(`<h2>Your age is ${a}. Enter valide age...</h2>`);
+        }
+    }
+    tnrn();
+
+    // TNRS
+    function tnrs(){
+        var a = parseInt(prompt("Enter your age : "));
+        if(a>=18 && a<=100){
+            return 1;
+        }else if(a<18){
+            return 2;
+        }else if(a>100){
+            return 3;
+        }
+    }
+    var vote = tnrs();
+    if(vote == 1){
+        document.write(`<h2>Are you elagible for votting...</h2>`);
+    }else if(vote == 2){
+        document.write(`<h2>Are you not elagible for votting...</h2>`);
+    }else if(vote == 3){
+        document.write(`<h2>Enter valide age...</h2>`);
+    }
+
+
+    // TSRN
+    function tsrn(a) {
+        if (a >= 18 && a <= 100) {
+            document.write(`<h2>Your age is ${a}. Are you elagible for votting...</h2>`);
+        } else if (a < 18) {
+            document.write(`<h2>Your age is ${a}. Are you not elagible for votting...</h2>`)
+        } else if (a > 100) {
+            document.write(`<h2>Your age is ${a}. Enter valide age...</h2>`);
+        }
+    }
+    var a = parseInt(prompt("Enter your age : "));
+    tsrn(a);
+
+
+    // TSRS
+    function tsrs(a){
+        if(a>=18 && a<=100){
+             return 1;
+         }else if(a<18){
+             return 2;
+         }else if(a>100){
+             return 3;
+         }
+    }
+    var a = parseInt(prompt("Enter your age : "));
+    var vote = tsrs(a);
+    if(vote == 1){
+        document.write(`<h2>Are you elagible for votting...</h2>`);
+    }else if(vote == 2){
+        document.write(`<h2>Are you not elagible for votting...</h2>`);
+    }else if(vote == 3){
+        document.write(`<h2>Enter valide age...</h2>`);
+    }
+
+
+</script>
+
+</html>
