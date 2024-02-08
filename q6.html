@@ -1,0 +1,80 @@
+<html>
+<script type="text/javascript">
+    //6.Write a javascript Program to perform a swapping of two variables.(all function use).
+
+    // TNRN
+    document.write(`<h2>TNRN Swapping two number</h2>`);
+    function tnrn() {
+        var a = parseInt(prompt("Enter nomber A : "));
+        var b = parseInt(prompt("Enter nomber B : "));
+        var c;
+        c = a;
+        a = b;
+        b = c;
+        document.write(`<h2>A : ${a}</h2>`);
+        document.write(`<h2>B : ${b}</h2>`);
+    }
+    tnrn();
+
+
+    //TNRS
+    document.write(`<h2>TNRS Swapping two number</h2>`);
+    function tnrs1() {
+        var a = parseInt(prompt("Enter nomber A : "));
+        return a;
+    }
+    function tnrs2() {
+        var b = parseInt(prompt("Enter nomber B : "));
+        return b;
+    }
+    var ans1;
+    ans1 = tnrs1();
+    var ans2;
+    ans2 = tnrs2();
+    var c = ans1;
+    ans1 = ans2;
+    ans2 = c;
+    document.write(`<h2>A : ${ans1}</h2>`);
+    document.write(`<h2>B : ${ans2}</h2>`);
+
+
+    // TSRN
+    document.write(`<h2>TSRN Swapping two number</h2>`);
+    function tsrn(a, b) {
+        var c = a;
+        a = b;
+        b = c;
+        document.write(`<h2>A : ${a}</h2>`);
+        document.write(`<h2>B : ${b}</h2>`);
+    }
+    var a = parseInt(prompt("Enter number A : "));
+    var b = parseInt(prompt("Enter number B : "));
+    tsrn(a, b);
+
+
+    //TSRS
+    document.write(`<h2>TSRS Swapping two number</h2>`);
+    function tsrs1(a, b) {
+        var c = a;
+        a = b;
+        b = c;
+        return a;
+    }
+    function tsrs2(b, a) {
+        var c = a;
+        a = b;
+        b = c;
+        return b;
+    }
+
+    var a = parseInt(prompt("Enter number A : "));
+    var b = parseInt(prompt("Enter number B : "));
+    tsrs1(a, b);
+    tsrs2(a, b);
+    var ans1 = tsrs1(a, b);
+    var ans2 = tsrs2(b, a);
+    document.write(`<h2>A : ${ans1}</h2>`);
+    document.write(`<h2>B : ${ans2}</h2>`);   
+</script>
+
+</html>

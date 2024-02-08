@@ -1,0 +1,25 @@
+<html>
+<script type="text/javascript">
+    // 5.Write Write a JavaScript program to add two number of addition, subtraction, multiplication, division (using simple function).
+    function asmd() {
+        var a = parseInt(prompt("Enter nomber A : "));
+        var b = parseInt(prompt("Enter nomber B : "));
+        var choice = prompt("Enter your choice : +  -  /  * ");
+
+        if (choice == '+') {
+            document.write(`<h2> ${a}+${b} = ${a + b}</h2>`);
+        } else if (choice == '-') {
+            document.write(`<h2> ${a}-${b} = ${a - b}</h2>`);
+        } else if (choice == '/') {
+            document.write(`<h2> ${a}/${b} = ${a / b}</h2>`);
+        } else if (choice == '*') {
+            document.write(`<h2> ${a}*${b} = ${a * b}</h2>`);
+        } else {
+            document.write(`<h2> Inva;ide choice...</h2>`);
+        }
+
+    }
+    asmd();
+</script>
+
+</html>
