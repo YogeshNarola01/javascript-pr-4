@@ -1,0 +1,108 @@
+<html>
+<script type="text/javascript">
+    // 7.Write a JavaScript program to find which number is greter in 3 numbers using nested if else.(using all function).
+
+    // TNRN
+    document.write(`<h2>TNRN with greter number in nested if else..</h2>`);
+    function tnrn() {
+        var a = parseInt(prompt("Enter nomber A : "));
+        var b = parseInt(prompt("Enter nomber B : "));
+        var c = parseInt(prompt("Enter nomber C : "));
+        if(a>b){
+            if(a>c){
+                document.write(`<h2>${a} : A is max...</h2>`);
+            }else{
+                document.write(`<h2>${c} : C is max...</h2>`);
+            }
+        }else{
+            if(b>c){
+                document.write(`<h2>${b} : B is max...</h2>`);
+            }else{
+                document.write(`<h2>${c} : C is max...</h2>`);
+            }
+        }
+    }
+    tnrn();              
+
+
+    // TNRS 
+    document.write(`<h2>TNRS with greter number in nested if else..</h2>`);
+    function tnrs() {
+        var a = parseInt(prompt("Enter nomber A : "));
+        var b = parseInt(prompt("Enter nomber B : "));
+        var c = parseInt(prompt("Enter nomber C : "));
+    if(a>b){
+        if(a>c){
+            document.write(`<h2>A</h2>`);
+            return a; 
+        }else{
+            document.write(`<h2>C</h2>`);
+            return c;
+        }
+    }else{
+        if(b>c){
+            document.write(`<h2>B</h2>`);
+            return b;
+        }else{
+            document.write(`<h2>C</h2>`);
+            return c;
+        }
+    }
+    }
+    var ans = tnrs();
+    document.write(`<h2>${ans} is max...</h2>`);
+
+
+    // TSRN
+    document.write(`<h2>TSRN with greter number in nested if else..</h2>`);
+    function tsrn(a,b,c) {
+    if (a > b) {
+        if (a > c) {
+            document.write(`<h2>${a} : A is max...</h2>`);
+        } else {
+            document.write(`<h2>${c} : C is max...</h2>`);
+        }
+    } else {
+        if (b > c) {
+            document.write(`<h2>${b} : B is max...</h2>`);
+        } else {
+            document.write(`<h2>${c} : C is max...</h2>`);
+        }
+     }
+    }
+    var a = parseInt(prompt("Enter nomber A : "));
+    var b = parseInt(prompt("Enter nomber B : "));
+    var c = parseInt(prompt("Enter nomber C : "));
+    tsrn(a, b, c);
+
+
+    // TSRS
+    document.write(`<h2>TSRS with greter number in nested if else..</h2>`);
+    function tsrs(a, b, c) {
+        if (a > b) {
+            if (a > c) {
+                document.write(`<h2>A is max...</h2>`);
+                return a;
+            } else {
+                document.write(`<h2>C is max...</h2>`);
+                return c;
+            }
+        } else {
+            if (b > c) {
+                document.write(`<h2>B is max...</h2>`);
+                return b;
+            } else {
+                document.write(`<h2>C is max...</h2>`);
+                return c;
+            }
+        }
+    }
+    var a = parseInt(prompt("Enter nomber A : "));
+    var b = parseInt(prompt("Enter nomber B : "));
+    var c = parseInt(prompt("Enter nomber C : "));
+    var ans = tsrs(a,b,c);
+    document.write(`<h2>${ans}</h2>`);
+
+</script>
+
+</html>

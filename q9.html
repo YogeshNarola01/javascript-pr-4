@@ -1,0 +1,82 @@
+<html>
+<script type="text/javascript">
+    // 9.Write a JavaScript   program to input angles of a triangle and check whether triangle is valid or not.(using all function)
+
+    // TNRN
+    document.write(`<h2>TNRN with triangle is valide or not in if else...</h2>`);
+    function tnrn() {
+        var a = parseInt(prompt("Enter the triangle size A : "));
+        var b = parseInt(prompt("Enter the triangle size B : "));
+        var c = parseInt(prompt("Enter the triangle size C : "));
+        var d = a + b + c;
+        if (d == 180) {
+            document.write(`<h2>${a}+${b}+${c} = 180. Your triangle is valide...</h2>`);
+        } else {
+            document.write(`<h2>${a}+${b}+${c} = ${a + b + c}. Your triangle is invalide...</h2>`);
+        }
+    }
+    tnrn();
+
+
+    // TNRS
+    document.write(`<h2>TNRS with triangle is valide or not in if else...</h2>`);
+    function tnrs() {
+        var a = parseInt(prompt("Enter the triangle size A : "));
+        var b = parseInt(prompt("Enter the triangle size B : "));
+        var c = parseInt(prompt("Enter the triangle size C : "));
+        var d = a + b + c;
+        if (d == 180) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+    var ans = tnrs();
+    if (ans == 1) {
+        document.write(`<h2>Total sum is 180. Your triangle is valide...</h2>`);
+    } else {
+        document.write(`<h2>Total sum is not 180 . Your triangle is invalide...</h2>`);
+    }
+
+
+    // TSRN
+    document.write(`<h2>TSRN with triangle is valide or not in if else...</h2>`);
+    function tsrn(a, b, c) {
+        var d = a + b + c;
+        if (d == 180) {
+            document.write(`<h2>${a}+${b}+${c} = 180. Your triangle is valide...</h2>`);
+        } else {
+            document.write(`<h2>${a}+${b}+${c} = ${a + b + c}. Your triangle is invalide...</h2>`);
+        }
+    }
+    var a = parseInt(prompt("Enter the triangle size A : "));
+    var b = parseInt(prompt("Enter the triangle size B : "));
+    var c = parseInt(prompt("Enter the triangle size C : "));
+    tsrn(a, b, c);
+
+
+
+    // TSRS
+    document.write(`<h2>TSRS with triangle is valide or not in if else...</h2>`);
+    function tsrs(a, b, c) {
+        var d = a + b + c;
+        if (d == 180) {
+            document.write(`<h2>Total sum is ${a}+${b}+${c} = 180</h2>`);
+            return 1;
+        } else {
+            document.write(`<h2>Total sum is ${a}+${b}+${c} = ${d}</h2>`);
+            return 0;
+        }
+    }
+    var a = parseInt(prompt("Enter the triangle size A : "));
+    var b = parseInt(prompt("Enter the triangle size B : "));
+    var c = parseInt(prompt("Enter the triangle size C : "));
+    var ans = tsrs(a, b, c);
+    if (ans == 1) {
+        document.write(`<h2>Your triangle is valide...</h2>`);
+    } else {
+        document.write(`<h2>Your triangle is invalide...</h2>`);
+    }
+</script>
+
+</html>
